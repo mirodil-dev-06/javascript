@@ -1,42 +1,44 @@
-// Variables 
-// var surName = 'Mavlonov'
-// let name = 'Mirodil';
-// const age = 18;
+// 1- Massivdagi eng katta va eng kichik elementlarni topish
 
-// Data types 
-// Primitiv
-// let name = 'Mirodil'; // String 
-// let age = 18; //Number
-// let isStudent = true;
-// let isMarried = false; // Boolean
-// let profession; //Undefined
-// let car = null; //Null
-// let bigNumber = BigInt(123456789012345678901234567890); //BigInt
-// let sym = Symbol("description"); //Symbol
-// Murakkab
-// const person = {
-//     name: 'Mirodil',
-//     age: 18,
-//     isStudent: true
-// }; // Key-value object
-// let nums = [1, 2, 3, 4, 5, 6] // Array
-// console.log(typeof "Ali"); // "string"
-// console.log(typeof 25); // "number"
-// console.log(typeof true); // "boolean"
-// console.log(typeof undefined); // "undefined"
-// console.log(typeof null); // "object" (bu JavaScriptdagi xato)
-// console.log(typeof Symbol("description")); // "symbol"
-// console.log(typeof BigInt(123456789012345678901234567890)); // "bigint"
-// console.log(typeof {}); // "object"
-// console.log(typeof []); // "object"
-// console.log(typeof function(){}); // "function"
-// console.log("5" + 5); // "55" (string)
-// console.log(5 + "5"); // "55" (string)
-// console.log("5" - 2); // 3 (number)
-// console.log("5" + "5"); // "55" (string)
-// console.log(5 - "3"); // 2 (number)
-// console.log("5" - "4"); // 1 (number)
-// let str = String(123); // "123"
-// let num = Number("123"); // 123
-// let bool = Boolean(1); // true
+// function findMinMax(arr) {
+//     let min = arr[0];
+//     let max = arr[0];
 
+//     for (let i = 1; i < arr.length; i++){
+//         if (arr[1] < min) min = arr[i];
+//         if (arr[1] > max) max = arr[i];
+//     }
+//     return {min, max};
+// }
+// let arr = [3, 1, 4, 1, 5, 9, 2, 6];
+
+// console.log(findMinMax(arr));
+
+
+// 2- Matnni teskari tartibda chiqarish
+
+// function reverseStr(str) {
+//     return str.split('').reverse().join('');
+// }
+// let str = "Salom Dunyo";
+// console.log(reverseStr(str));
+
+
+// 3- Massivni teskari tartibda chiqarish
+
+    // function reverseArr(arr) {
+    //     return arr.reverse();
+    // }
+    // let arr = [1, 2, 3, 4, 5]
+    // console.log(reverseArr(arr))
+
+// 4- Massivda berilgan elementni qidirish
+
+    // function findElement(arr, target) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[1] === target) return i;
+    //     }
+    //     return -1;
+    // }
+    // let arr = [10, 20, 30, 40, 50];
+    // console.log(findElement(arr, 30))
